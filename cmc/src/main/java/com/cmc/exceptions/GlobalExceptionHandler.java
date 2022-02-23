@@ -26,18 +26,6 @@ public class GlobalExceptionHandler {
         return new ResponseEntity(response, HttpStatus.OK);
     }
 
-    @ExceptionHandler(value = InvalidActionException.class)
-    public ResponseEntity<RestResponse> handleInvalidActionException(InvalidActionException exception) {
-
-        RestResponse response = new RestResponse
-                .RestResponseBuilder(StatusCode.FAILED.getValue(), null)
-                .devMessage(exception.getMessage())
-                .userMessage(exception.getMessage())
-                .build();
-
-        return new ResponseEntity(response, HttpStatus.OK);
-    }
-
     @ExceptionHandler(value = BadRequestException.class)
     public ResponseEntity<RestResponse> handleBadRequestException(BadRequestException exception) {
 
