@@ -19,12 +19,12 @@ public class StudentSeeder {
 
     public void run() {
         Clazz clazz1 = new Clazz();
-        clazz1.setName("Class 1");
+        clazz1.setName("Class Math");
         clazz1.setCreatedAt(DateTimeUtils.getCurrentTimeUTC());
         clazz1.setUpdatedAt(DateTimeUtils.getCurrentTimeUTC());
 
         Clazz clazz2 = new Clazz();
-        clazz2.setName("Class 2");
+        clazz2.setName("Class Physic");
         clazz2.setCreatedAt(DateTimeUtils.getCurrentTimeUTC());
         clazz2.setUpdatedAt(DateTimeUtils.getCurrentTimeUTC());
 
